@@ -14,8 +14,8 @@
     "link": "https://rspress.dev/api/index.html"
   },
   {
-    "text": "Test",
-    "link": "/test/",
-    "activeMatch": "/test/"
+    "text": "Notee",
+    "link": "/notee/",
+    "activeMatch": "/notee/"
   }
 ]
