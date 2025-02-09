@@ -12,5 +12,10 @@
   {
     "text": "API",
     "link": "https://rspress.dev/api/index.html"
+  },
+  {
+    "text": "Test",
+    "link": "/test/",
+    "activeMatch": "/test/"
   }
 ]
