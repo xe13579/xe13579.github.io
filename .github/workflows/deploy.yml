@@ -1,67 +1,59 @@
-
-name: Deploy VitePress site to Pages
+name: Deploy Rspress site to Pages
 
 on:
   push:
-    # 推送任意tags或者master分支推送的时候触发任务
-    tags:
-      - '*'
-    branches:
-      - master
+    branches: [main]
 
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
-  deploy-and-sync:
+  # Build job
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
-          ref: 'master'
-
-      - name: Install yarn
-        run: corepack enable
-
-      - uses: actions/setup-node@v3
+          fetch-depth: 0 # Not needed if lastUpdated is not enabled
+      - uses: pnpm/action-setup@v2 # pnpm is optional but recommended, you can also use npm / yarn
         with:
-          node-version: '18'
-          cache: 'yarn'
-
+          version: 6
+          cache: pnpm
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: pnpm
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
       - name: Install dependencies
-        run: yarn install
-
-      - name: Build Site
-        run: npm run build
-
-      # 将文档产物提交到gh-pages分支
-      - name: Deploy for Github 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        run: pnpm install
+      - name: Build with Rspress
+        run: |
+          pnpm run build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          branch: gh-pages
-          folder: doc_build
-          # enable single-commit to reduce the repo size
-          single-commit: true
-          clean: true
+          path: doc_build
 
-#      - name: Sync to Gitee
-#        uses: wearerequired/git-mirror-action@v1.2.0
-#        env:
-#          SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
-#        with:
-#          # GitHub 仓库地址
-#          source-repo: git@github.com:chargeduck/notes.git
-#          # Gitee 仓库地址
-#          destination-repo: git@gitee.com:chargeduck/notes.git
-#
-#      - name: Build Gitee Pages
-#        uses: yanglbme/gitee-pages-action@main
-#        with:
-#          # 替换为你的 Gitee 用户名
-#          gitee-username: chargeduck
-#          # 注意在 Settings->Secrets 配置 GITEE_PASSWORD
-#          gitee-password: ${{ secrets.GITEE_PASSWORD }}
-#          # 注意替换为你的 Gitee 仓库，仓库名严格区分大小写，请准确填写，否则会出错
-#          gitee-repo: chargeduck/notes
-#          # 要部署的分支，默认是 master，若是其他分支，则需要指定（指定的分支必须存在）
-#          branch: gh-pages
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
