@@ -19,8 +19,8 @@
     "activeMatch": "/notee/"
   },
   {
-    "text": "Document Read",
-    "link": "/document read/",
-    "activeMatch": "/document read/"
+    "text": "DocumentRead",
+    "link": "/documentread/",
+    "activeMatch": "/documentread/"
   }
 ]
