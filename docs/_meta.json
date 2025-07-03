@@ -17,5 +17,9 @@
     "text": "Notee",
     "link": "/notee/",
     "activeMatch": "/notee/"
+  },
+    {
+    "text": "Document Read",
+    "link": "/documentread/"
   }
 ]
