@@ -6,6 +6,11 @@
   {
     "type": "doc",
     "name": "index",
+    "label": "介绍"
+  },
+  {
+    "type": "doc",
+    "name": "index1",
     "label": "TSN 学习"
   },
   {
