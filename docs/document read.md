@@ -7,7 +7,7 @@
 2. 对片段 {$ S_{1} $，$ S_{2} $，...，$ S_{k} $} 随机采样几帧得到 {$ T_{1} $，$ T_{2} $，...，$ T_{k} $} ，其中$ T_{k} $∈$ S_{k} $。
 3. 公式如下 
 
-    ![1](mdPicture/1.png)
+    ![1](./mdPicture/1.png)
 
 4.  ℋ：softmax，即 ℋ(G) = Softmax(G)
 
@@ -15,9 +15,9 @@
 
     ℱ：CNN提取特征
 
-    注意，![2](mdPicture/2.png)
+    注意，![2](./mdPicture/2.png)
 
-    而 ![3](mdPicture/3.png)，最后 $ G_{i} $ 输出一个分数
+    而 ![3](./mdPicture/3.png)，最后 $ G_{i} $ 输出一个分数
 
     g：aggregation function，使用平均融合上一步的结果，并使用加权1：1.5融合空间和时间结果。
 
@@ -33,7 +33,7 @@ RBG difference描述了连续2帧的差别，即相邻帧 RGB 差值图
 warped optical flow fields：去除相机运动的光流图
 
 
-## ![alt text](mdPicture/4.png)
+## ![alt text](./mdPicture/4.png)
 
 空间流处理RGB，时间流处理光流，输入给对应的segmental consensus，然后分别对结果取平均得到结果。最后将结果加权平均实现分类。
 #
