@@ -34,6 +34,11 @@
       {
         "text": "I3D 学习",
         "link": "/documentread/index2.html"
+      },
+      {
+        "type": "dir",
+        "name": "mdpicture",
+        "hidden": true
       }
     ]
   }
