@@ -1,13 +1,11 @@
 [
   {
     "text": "Guide",
-    "link": "/guide/",
-    "activeMatch": "/guide/"
+    "link": "/guide/"
   },
   {
     "text": "Hello world",
-    "link": "/hello/",
-    "activeMatch": "/hello/"
+    "link": "/hello/"
   },
   {
     "text": "API",
@@ -15,12 +13,28 @@
   },
   {
     "text": "Notee",
-    "link": "/notee/",
-    "activeMatch": "/notee/"
+    "link": "/notee/"
   },
-    {
+  {
     "text": "Document Read",
     "link": "/documentread/",
-    "activeMatch": "/documentread/"
+    "items": [
+      {
+        "type": "title",
+        "label": "论文阅读笔记"
+      },
+      {
+        "text": "介绍",
+        "link": "/documentread/"
+      },
+      {
+        "text": "TSN 学习",
+        "link": "/documentread/index1.html"
+      },
+      {
+        "text": "I3D 学习",
+        "link": "/documentread/index2.html"
+      }
+    ]
   }
 ]
