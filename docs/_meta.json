@@ -1,17 +1,5 @@
 [
   {
-    "text": "Guide",
-    "link": "/guide/"
-  },
-  {
-    "text": "Hello world",
-    "link": "/hello/"
-  },
-  {
-    "text": "API",
-    "link": "https://rspress.dev/api/index.html"
-  },
-  {
     "text": "Notee",
     "link": "/notee/"
   },
