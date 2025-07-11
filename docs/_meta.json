@@ -40,6 +40,10 @@
         "link": "/documentread/index2.html"
       },
       {
+        "text": "TEA 学习",
+        "link": "/documentread/index3.html"
+      },
+      {
         "type": "dir",
         "name": "mdpicture",
         "hidden": true
