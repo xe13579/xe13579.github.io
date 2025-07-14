@@ -8,3 +8,4 @@
 
 - **TSN (Temporal Segment Networks)**
 - **I3D (Inflated 3D ConvNet)**
+- **TEA (Temporal Efficient Attention)**
