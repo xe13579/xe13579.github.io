@@ -27,6 +27,10 @@
         "text": "TEA 学习",
         "link": "/documentread/index3.html"
       },
+       {
+        "text": "Finegym 数据集",
+        "link": "/documentread/index4.html"
+      },
       {
         "type": "dir",
         "name": "mdpicture",
