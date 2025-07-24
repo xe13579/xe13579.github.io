@@ -5,36 +5,6 @@
   },
   {
     "text": "Document Read",
-    "link": "/documentread/",
-    "items": [
-      {
-        "type": "title",
-        "label": "论文阅读笔记"
-      },
-      {
-        "text": "介绍",
-        "link": "/documentread/"
-      },
-      {
-        "text": "TSN 学习",
-        "link": "/documentread/index1.html"
-      },
-      {
-        "text": "I3D 学习",
-        "link": "/documentread/index2.html"
-      },
-      {
-        "text": "TEA 学习",
-        "link": "/documentread/index3.html"
-      },
-       {
-        "text": "Finegym 数据集",
-        "link": "/documentread/index4.html"
-      },
-             {
-        "text": "VIT 学习",
-        "link": "/documentread/index5.html"
-      }
-    ]
+    "link": "/documentread/"
   }
 ]
