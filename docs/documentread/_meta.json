@@ -1,26 +1,36 @@
-[
-  {
-    "text": "介绍",
-    "link": "/documentread/"
-  },
-  {
-    "text": "TSN 学习", 
-    "link": "/documentread/index1"
-  },
-  {
-    "text": "I3D 学习",
-    "link": "/documentread/index2"
-  },
-  {
-    "text": "TEA 学习",
-    "link": "/documentread/index3"
-  },
-  {
-    "text": "Finegym 数据集",
-    "link": "/documentread/index4"
-  },
-  {
-    "text": "VIT 学习",
-    "link": "/documentread/index5"
-  }
-]
+{
+  "type": "dir",
+  "name": "Document Read",
+  "children": [
+    {
+      "type": "file",
+      "name": "介绍",
+      "path": "index.md"
+    },
+    {
+      "type": "file", 
+      "name": "TSN 学习",
+      "path": "index1.md"
+    },
+    {
+      "type": "file",
+      "name": "I3D 学习", 
+      "path": "index2.md"
+    },
+    {
+      "type": "file",
+      "name": "TEA 学习",
+      "path": "index3.md"
+    },
+    {
+      "type": "file",
+      "name": "Finegym 数据集",
+      "path": "index4.md"
+    },
+    {
+      "type": "file",
+      "name": "VIT 学习",
+      "path": "index5.md"
+    }
+  ]
+}
