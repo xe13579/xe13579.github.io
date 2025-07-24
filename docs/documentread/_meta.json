@@ -1,26 +1,26 @@
 [
   {
     "text": "介绍",
-    "link": "/documentread/index1.html"
+    "link": "/documentread/"
   },
   {
-    "text": "TSN 学习",
-    "link": "/documentread/index1.html"
+    "text": "TSN 学习", 
+    "link": "/documentread/index1"
   },
   {
     "text": "I3D 学习",
-    "link": "/documentread/index2.html"
+    "link": "/documentread/index2"
   },
   {
     "text": "TEA 学习",
-    "link": "/documentread/index3.html"
+    "link": "/documentread/index3"
   },
   {
     "text": "Finegym 数据集",
-    "link": "/documentread/index4.html"
+    "link": "/documentread/index4"
   },
   {
     "text": "VIT 学习",
-    "link": "/documentread/index5.html"
+    "link": "/documentread/index5"
   }
 ]
