@@ -31,10 +31,9 @@
         "text": "Finegym 数据集",
         "link": "/documentread/index4.html"
       },
-      {
-        "type": "dir",
-        "name": "mdpicture",
-        "hidden": true
+             {
+        "text": "VIT 学习",
+        "link": "/documentread/index5.html"
       }
     ]
   }
