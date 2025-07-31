@@ -1,7 +1,9 @@
 # Multiview Transformers for Video Recognition
 
 ## Introduction
-今天汇报的是MTV
+
+![35](./mdPicture/35.png)
+
 
 在图像领域，多尺度处理通常使用金字塔进行，因为自然图像的统计特性是各向同性的且具有平移不变性。
 
@@ -20,7 +22,7 @@
 2. 而用于捕捉细节的视图，使用容量更大的编码器。
 
 ## Multiview tokenization
-我们的方法的第一步是进行 Multiview Tokenization，也就是将同一个视频从多个不同的“视图”（views）进行分割与编码。
+方法的第一步是进行 Multiview Tokenization，也就是将同一个视频从多个不同的“视图”（views）进行分割与编码。
 
 这里的“视图”指的是：我们用不同尺度的 tubelet 去切分视频。这些 tubelet 是固定大小的三维小块，包含时间和空间维度的信息。
 
@@ -60,8 +62,6 @@
 具体来说，来自视图 i + 1 的标记与视图 i 的标记沿着隐藏维度进行拼接。这些标记随后被输入到层 i 的 MLP 块中。
 
 ## 实验
-
-
 
 对于每个视图的主干网络，考虑了五种 ViT 变体，分别是“Tiny”、“Small”、“Base”、“Large”和“Huge”。
 
@@ -104,6 +104,7 @@
 #
 
 ### Effect of the number of views & Which layers to apply cross-view fusion?
+
 接下来研究了 view 的数量的影响
 表 1(f)展示了随着视角数量的增加，在 Kinetics-400 上的性能表现。
 
