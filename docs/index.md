@@ -9,6 +9,9 @@ hero:
       - theme: brand
         text: 开始阅读文档
         link: /documentread/
+      - theme: brand
+        text: Self-introduction
+        link: /introduction/
       - theme: alt
         text: 查看更多
         link: /guide/
