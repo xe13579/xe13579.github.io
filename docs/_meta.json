@@ -1,7 +1,11 @@
 [
   {
-    "text": "Notee",
+    "text": "Paper List",
     "link": "/notee/"
+  },
+  {
+    "text": "Daily Note",
+    "link": "/dailynote/"
   },
   {
     "text": "Document Read",
