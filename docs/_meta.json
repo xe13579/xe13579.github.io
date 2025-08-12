@@ -5,7 +5,61 @@
   },
   {
     "text": "Daily Note",
-    "link": "/dailynote/"
+    "link": "/dailynote/",
+    "items": [
+      {
+        "type": "title",
+        "label": "每日记录"
+      },
+      {
+        "text": "介绍",
+        "link": "/dailynote/index.html"
+      },
+      {
+        "text": "COD记录",
+        "link": "/dailynote/index1.html"
+      },
+      {
+        "text": "充电协议C口",
+        "link": "/dailynote/index2.html"
+      },
+      {
+        "text": "开发线材设想",
+        "link": "/dailynote/index3.html"
+      },
+      {
+        "text": "完美手机设想",
+        "link": "/dailynote/index4.html"
+      },
+      {
+        "text": "手机硬件设想",
+        "link": "/dailynote/index5.html"
+      },
+      {
+        "text": "手机流畅度思考",
+        "link": "/dailynote/index6.html"
+      },
+      {
+        "text": "数位板与无源笔",
+        "link": "/dailynote/index7.html"
+      },
+      {
+        "text": "购买有趣思考",
+        "link": "/dailynote/index8.html"
+      },
+      {
+        "text": "买KEY",
+        "link": "/dailynote/index9.html"
+      },
+      {
+        "text": "森海价格",
+        "link": "/dailynote/index10.html"
+      },
+      {
+        "text": "subtick",
+        "link": "/dailynote/index11.html"
+      }
+    ]
   },
   {
     "text": "Document Read",
