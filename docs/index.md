@@ -10,6 +10,9 @@ hero:
         text: 开始阅读文档
         link: /documentread/
       - theme: brand
+        text: 预览 iPhone PDF
+        link: /dailynote/index14/
+      - theme: brand
         text: Self-introduction
         link: /introduction/
       - theme: alt
