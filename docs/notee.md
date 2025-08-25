@@ -35,6 +35,7 @@ UniFormerV2: spatiotemporal learning by arming image vits with video uniformer
 
 ## Stage3-视觉语言模型：
 基础论文：Learning Transferable Visual Models From Natural Language Supervision
+
 Bidirectional Cross-Modal Knowledge Exploration for Video Recognition with Pre-trained Vision-Language Models, CVPR23
 
 VicTR: Video-conditioned Text Representations for Activity Recognition, CVPR24
