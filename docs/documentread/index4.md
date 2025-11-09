@@ -126,7 +126,7 @@ FineGym具有以下显著特点：
 
 但是在FineGym上，对时域动态信息的整合和利用就显得十分重要。
 
-![16](./mdPicture/16.png)
+<!-- ![16](./mdPicture/16.png) -->
 ![17](./mdPicture/17.png)        
 ![18](./mdPicture/18.png)
 
