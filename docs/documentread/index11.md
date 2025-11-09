@@ -36,7 +36,7 @@ OST：利用最优时空方法改进文本知识 通用视频识别描述符
 
 ## Method
 
-![6](./mdPicture/OST_method.png)
+![6](./mdPicture/OST_Method.png)
 
 ## Training Objectives
 
